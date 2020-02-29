@@ -1,14 +1,20 @@
 ---
-date: '3'
-title: 'OctoProfile'
-cover: './octoprofile.png'
-github: 'https://github.com/bchiang7/octoprofile'
-external: 'https://octoprofile.now.sh'
+date: '1'
+title: 'Flowli WebAPI'
+cover: './web-api.jpg'
+external: 'https://webapi.project-syndicate.org/'
 tech:
-  - Next.js
-  - Chart.js
-  - GitHub API
+  - .NET Core Web API
+  - MongoDB
+  - Elastic Search
+  - AutoFac
+  - Xunit
+  - Jasmine
 showInProjects: true
 ---
 
-A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.
+Core Web API consumed by Flowli CMS and Project Syndicate Website.
+<br/><br/>
+Has a Core Backend implemented using a Domain-Driven Design (DDD) architecture, with dependency injection via AutoFact and a MongoDB Repository.<br/>
+Contains .NET and Typescript WebApi clients to be consumed as NuGet packages from other applications.<br/>
+Has Integration Tests and Unit Tests, implemented using Xunit(.Net) and Jasmine(Typescript).
