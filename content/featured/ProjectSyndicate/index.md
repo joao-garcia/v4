@@ -3,6 +3,7 @@ date: '3'
 title: 'Project Syndicate Website'
 cover: './cover.png'
 external: 'https://project-syndicate.org'
+github: ''
 tech:
   - ASP.NET Core MVC
   - Razor

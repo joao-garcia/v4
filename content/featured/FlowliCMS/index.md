@@ -2,6 +2,7 @@
 date: '2'
 title: 'Flowli CMS'
 external: 'https://flow.li'
+github: ''
 cover: './flowli-cover.png'
 tech:
   - BackboneJS
