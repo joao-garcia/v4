@@ -1,7 +1,7 @@
 ---
 date: '2020-01-01'
 title: 'TVCine Website'
-external: 'https://tvcine.com/'
+external: 'https://tvcine.pt/'
 tech:
   - NuxtJS
   - Strapi CMS

@@ -72,7 +72,7 @@ const StyledTabButton = styled.button`
   white-space: nowrap;
   font-family: ${fonts.SFMono};
   font-size: ${fontSizes.smish};
-  color: ${props => (props.isActive ? colors.green : colors.lightGrey)};
+  color: ${props => (props.isActive ? colors.primary : colors.lightGrey)};
   ${media.tablet`padding: 0 15px 2px;`};
   ${media.thone`
     ${mixins.flexCenter};
@@ -89,7 +89,7 @@ const StyledTabButton = styled.button`
 `;
 const StyledHighlight = styled.span`
   display: block;
-  background: ${colors.green};
+  background: ${colors.primary};
   width: 2px;
   height: ${theme.tabHeight}px;
   border-radius: ${theme.borderRadius};
@@ -140,7 +140,7 @@ const StyledJobTitle = styled.h4`
   margin-bottom: 5px;
 `;
 const StyledCompany = styled.span`
-  color: ${colors.green};
+  color: ${colors.primary};
 `;
 const StyledJobDetails = styled.h5`
   font-family: ${fonts.SFMono};

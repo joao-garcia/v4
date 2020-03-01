@@ -45,13 +45,13 @@ const StyledLogo = styled.div`
   ${mixins.flexCenter};
   a {
     display: block;
-    color: ${colors.green};
+    color: ${colors.primary};
     width: 42px;
     height: 42px;
     &:hover,
     &:focus {
       svg {
-        fill: ${colors.transGreen};
+        fill: ${colors.transPrimary};
       }
     }
     svg {
@@ -84,7 +84,7 @@ const StyledHamburgerBox = styled.div`
   height: 24px;
 `;
 const StyledHamburgerInner = styled.div`
-  background-color: ${colors.green};
+  background-color: ${colors.primary};
   position: absolute;
   width: ${theme.hamburgerWidth}px;
   height: 2px;
@@ -103,7 +103,7 @@ const StyledHamburgerInner = styled.div`
   &:after {
     content: '';
     display: block;
-    background-color: ${colors.green};
+    background-color: ${colors.primary};
     position: absolute;
     left: auto;
     right: 0;
@@ -146,7 +146,7 @@ const StyledListItem = styled.li`
   &:before {
     content: '0' counter(item) '.';
     text-align: right;
-    color: ${colors.green};
+    color: ${colors.primary};
     font-size: ${fontSizes.xs};
   }
 `;

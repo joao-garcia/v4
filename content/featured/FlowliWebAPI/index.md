@@ -1,5 +1,5 @@
 ---
-date: '1'
+date: '3'
 title: 'Flowli WebAPI'
 cover: './web-api.jpg'
 external: 'https://webapi.project-syndicate.org/'
@@ -16,6 +16,6 @@ showInProjects: true
 
 Core Web API consumed by Flowli CMS and Project Syndicate Website.
 <br/><br/>
-Has a Core Backend implemented using a Domain-Driven Design (DDD) architecture, with dependency injection via AutoFact and a MongoDB Repository.<br/>
+Has a Core Backend implemented using a Domain-Driven Design (DDD) architecture, with dependency injection via AutoFac and a MongoDB Repository.<br/>
 Contains .NET and Typescript WebApi clients to be consumed as NuGet packages from other applications.<br/>
 Has Integration Tests and Unit Tests, implemented using Xunit(.Net) and Jasmine(Typescript).

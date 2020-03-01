@@ -120,7 +120,7 @@ const GlobalStyle = createGlobalStyle`
 
     &:hover,
     &:focus {
-      color: ${colors.green};
+      color: ${colors.primary};
     }
   }
 
@@ -182,14 +182,14 @@ const GlobalStyle = createGlobalStyle`
           content: '▹';
           position: absolute;
           left: 0;
-          color: ${colors.green};
+          color: ${colors.primary};
         }
       }
     }
   }
 
   blockquote {
-    border-left-color: ${colors.green};
+    border-left-color: ${colors.primary};
     border-left-style: solid;
     border-left-width: 1px;
     margin-left: 0px;
@@ -218,14 +218,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .overline {
-    color: ${colors.green};
+    color: ${colors.primary};
     font-family: ${fonts.SFMono};
     font-size: ${fontSizes.md};
     font-weight: normal;
   }
 
   .subtitle {
-    color: ${colors.green};
+    color: ${colors.primary};
     margin: 0 0 20px 0;
     font-size: ${fontSizes.md};
     font-family: ${fonts.SFMono};
@@ -244,7 +244,7 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     align-items: center;
     margin-bottom: 50px;
-    color: ${colors.green};
+    color: ${colors.primary};
 
     .arrow {
       display: block;

@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import { Head, Loader, Nav, Social, Email, Footer } from '@components';
+import { Head, Nav, Social, Email, Footer } from '@components';
 import styled from 'styled-components';
 import { GlobalStyle, theme } from '@styles';
 const { colors, fontSizes, fonts } = theme;
@@ -26,7 +26,7 @@ const SkipToContent = styled.a`
   &:focus,
   &:active {
     outline: 0;
-    color: ${colors.green};
+    color: ${colors.primary};
     background-color: ${colors.lightNavy};
     border-radius: ${theme.borderRadius};
     padding: 18px 23px;
@@ -52,10 +52,9 @@ const StyledContent = styled.div`
 
 const Layout = ({ children, location }) => {
   const isHome = location.pathname === '/';
-  const [isLoading, setIsLoading] = useState(isHome);
 
   useEffect(() => {
-    if (isLoading || isHome) {
+    if (isHome) {
       return;
     }
     if (location.hash) {
@@ -67,7 +66,7 @@ const Layout = ({ children, location }) => {
         }
       }, 0);
     }
-  }, [isLoading]);
+  });
 
   return (
     <StaticQuery
@@ -90,20 +89,16 @@ const Layout = ({ children, location }) => {
 
           <SkipToContent href="#content">Skip to Content</SkipToContent>
 
-          {isLoading && isHome ? (
-            <Loader finishLoading={() => setIsLoading(false)} />
-          ) : (
-            <StyledContent>
-              <Nav isHome={isHome} />
-              <Social isHome={isHome} />
-              <Email isHome={isHome} />
+          <StyledContent>
+            <Nav isHome={isHome} />
+            <Social isHome={isHome} />
+            <Email isHome={isHome} />
 
-              <div id="content">
-                {children}
-                <Footer />
-              </div>
-            </StyledContent>
-          )}
+            <div id="content">
+              {children}
+              <Footer />
+            </div>
+          </StyledContent>
         </div>
       )}
     />
