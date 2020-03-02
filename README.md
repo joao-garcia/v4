@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/bchiang7/v4/master/src/images/logo.png" width="100" />
+  <img alt="Logo" src="https://raw.githubusercontent.com/joao-garcia/v4/master/src/images/logo.png" width="100" />
 </div>
 <h1 align="center">
   joao-garcia.com
@@ -12,8 +12,6 @@
     <img src="https://api.netlify.com/api/v1/badges/1963b488-7b78-48c9-9e2d-6fb5e47ab3af/deploy-status" alt="Netlify Status" />
   </a>
 </p>
-
-![demo](https://raw.githubusercontent.com/bchiang7/v4/master/src/images/demo.png)
 
 ## 🛠 Installation & Set Up
 
